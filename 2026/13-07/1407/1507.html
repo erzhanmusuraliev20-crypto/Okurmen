@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            height: 80vh;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .next {
+            float: right;
+        }
+    </style>
+    <script>
+        let surottor=[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMI6OQQ7DbHGGqf_yBGE5YSluHkxn75J9JpAC39yNwy3_sVDub-fk8hxa&s=10",
+            "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_16x9.jpg?w=1200",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDcDgOxS0WY_9WYSi6UWstMsAtI6fkuP9zWdPetKVHe9u7LZopPByAkoKP&s=10",
+        ]
+        src=surottor[0]
+        let activ=0
+        function next(){
+            let kaldyk=activ &3
+            document.getElementById
+            ("slide").src=surottor
+            [kaldyk]
+            activ=activ+1
+        }
+        function back(){
+            let kaldyk= (activ %3 + 2)
+            document.getElementById
+            ("slide").src=surottor
+            [kaldyk]
+        }
+    </script>
+</head>
+<body>
+    <img alt="hoto.png" id="slide">
+    <button class="next" onclick="next()">Next image</button>
+    <button class="back" onclick="back">Prev image</button>
+</body>
+</html>

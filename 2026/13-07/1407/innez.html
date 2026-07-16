@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svetofor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            border: 2px solid black;
+            height: 75vh;
+            width: 300px;
+        }
+
+        .kyzyl {
+            width: 300px;
+            height: 25vh;
+            background-color: red;
+            opacity: 0.5;
+        }
+
+        .sary {
+            width: 300px;
+            height: 25vh;
+            opacity: 0.5;
+            background-color: yellow;
+        }
+
+        .jashyl {
+            width: 300px;
+            height: 25vh;
+            opacity: 0.5;
+            background-color: green;
+        }
+
+        .active {
+            opacity: 1;
+            border: 3px solid blue;
+        }
+    </style>
+    <script>
+        let active = 0
+        function svetofor() {
+            active = active + 1;
+            let remainder = active % 3
+            // 1 % 3 => 1
+            // 2 % 3 => 2
+            // 3 % 3 => 0
+            if (remainder == 1) {
+                document.getElementById("jashyl").classList.remove("active")
+                document.getElementById("kyzyl").classList.add("active")
+            }
+
+            if (remainder == 2) {
+                document.getElementById("kyzyl").classList.remove("active")
+                document.getElementById("sary").classList.add("active")
+            }
+            if (remainder == 0) {
+                document.getElementById("sary").classList.remove("active")
+                document.getElementById("jashyl").classList.add("active")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="kyzyl" id="kyzyl"></div>
+        <div class="sary" id="sary"></div>
+        <div class="jashyl" id="jashyl"></div>
+    </div>
+    <button onclick="svetofor()">Switch</button>
+</body>
+
+</html>

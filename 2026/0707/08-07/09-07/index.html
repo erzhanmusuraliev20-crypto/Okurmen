@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        #Counter {
+            padding: 5px;
+            border: 2px solid rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="dark" id="toggle" onclick="toggle()">Counter</h1>
+    <h2 class="dark" id="Counter" onclick="count()">0</h2>
+    <script> 
+    let start=1
+        function count() {
+            document.getElementById("Counter").innerText=start
+            start=start+1
+        }
+        let isDark=true
+        function toggle(){
+            if(isDark)
+            document.getElementById("toggle").classList.remove ("dark") 
+        isDark=false
+        }
+    </script>
+</body>
+</html>

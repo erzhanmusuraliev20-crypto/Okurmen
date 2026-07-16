@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>                                          
+    <style>                                                        
+        .clic {                                                     
+            left: 0;                                                     
+            bottom: 0;                                                                
+            background-color: aqua;                                      
+            height: 1000px;                                                      
+            width: 1000px;                                                 
+        }                                                                       
+        .put {                                                                                    
+            font-size: 45px;
+            height: 50px;
+            width: 500px;
+            background-color: black;
+            color: white;
+        }
+        .color {
+            font-size: 58px;
+            width: 505px;
+            height: 100px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(46, 150, 150);
+            border-radius: 10px;
+        }
+        .flex { 
+            font-size: 40px;
+            background-color: black;
+            color: white;
+            width: 120px;
+            height: 60px;
+            position: relative;
+            display: flex;
+        }
+        .flex1 {
+            font-size: 40px;
+            background-color: black;
+            color: white;
+            width: 130px;
+            height: 60px;
+            position: relative;
+            bottom: 60px;
+            left: 120px;
+        }
+        .flex2 {
+            font-size: 40px;
+            background-color: black;
+            color: white;
+            width: 130px;
+            height: 60px;
+            position: relative;
+            bottom: 60px;
+            left: 115px;
+        }
+        .flex3 {
+            font-size: 40px;
+            background-color: black;
+            color: white;
+            width: 130px;
+            height: 60px;
+            position: relative;
+            bottom: 60px;
+            left: 111px;
+        }
+    </style>
+    <script>
+        let start = 0;
+        function plus() {
+            let value=document.getElementById
+            ("numbertwo").value
+            start=start + Number(value)
+            document.getElementById 
+            number.innerText =start
+        }
+
+        function minus() {
+            let value=document.getElementById
+            ("numbertwo").value
+            start=start - Number(value)
+            document.getElementById 
+            number.innerText =start
+        }
+        function multiplyByTwo() {
+            let value=document.getElementById
+            ("numbertwo").value
+            start=start * Number(value)
+            document.getElementById 
+            number.innerText =start
+        }
+        function divieByTwo() {
+            let value=document.getElementById
+            ("numbertwo").value
+            start=start / Number(value)
+            document.getElementById 
+            number.innerText =start
+        }
+    </script>
+</head>
+<body>
+    <div class="clic">
+    <h1 class="color" id="number">0</h1>
+    <input class="put" type="number" name="number" id="numbertwo" value="0">
+    <button class="flex" id="plus" onclick="plus()">+</button>
+    <button class="flex1" id="minus" onclick="minus()">-</button>
+    <button class="flex2" id="double" onclick="multiplyByTwo()">x</button>
+    <button class="flex3" id="divide" onclick="divieByTwo()">/</button>
+    </div>
+</body>
+</html>

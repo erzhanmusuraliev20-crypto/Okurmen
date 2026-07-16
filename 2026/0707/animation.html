@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes E-animation {
+            0% {
+                background-color: red;
+                border-radius: 25%;
+                rotate: 0deg;
+                left: 0;
+            }
+
+            50% {
+                background-color: green;
+                border-radius: 50%;
+                left: 300px;
+
+            }
+
+            75% {
+                left: 100px;
+            }
+
+            100% {
+                background-color: blue;
+                border-radius: 25%;
+                ruby-overhang: 360deg;
+                left: 0;
+            }
+        }
+        .animation {
+            border: 1px solid
+            rgb(0, 0, 0);
+            height: 50px;
+            width: 50px;
+            animation-name: E-animation;
+            animation-duration: 3s;
+            animation-iteration-count: 
+            infinite;
+            animation-timing-function:
+            linear;
+            position: relative
+        }
+
+        h1 {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="animation"></div>
+    <h1 class="E"></h1>
+    <h1 class="R"></h1>
+    <h1 class="J"></h1>
+    <h1 class="A1"></h1>
+    <h1 class="N"></h1>
+</body>
+</html>

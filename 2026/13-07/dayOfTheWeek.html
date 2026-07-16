@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inpit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            background-color: aqua;
+            height: 700px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function learnTheDay(){
+            let day = Number(document.getElementById("day").value)
+        
+        if (day == 1) { 
+           alert("Monday")
+        }
+
+        if (day == 2) { 
+           alert("Tuesday")
+        }
+        
+         if (day == 3) { 
+           alert("Wednesday")
+        }
+
+         if (day == 2) { 
+           alert("Tuesday")
+        }
+    }
+    </script>
+</head>
+<body>
+    <label for="day">Enter day of the week</label>
+    <input type="number" name="day" id="day">
+    <button onclick="learnTheDay()">learn the day</button>
+</body>
+</html>
